@@ -6,16 +6,16 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 19:56:37 by marvin            #+#    #+#             */
-/*   Updated: 2023/04/19 19:56:38 by marvin           ###   ########.fr       */
+/*   Updated: 2023/05/02 14:06:23 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
+#include"libft.h"
 int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
-	int	i;
-	int	count;
-	int	count1;
+	size_t	i;
+	size_t	count;
+	size_t	count1;
 
 	i = 0;
 	count = 0;

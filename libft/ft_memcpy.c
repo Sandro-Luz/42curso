@@ -6,16 +6,16 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 19:55:51 by marvin            #+#    #+#             */
-/*   Updated: 2023/04/19 19:55:54 by marvin           ###   ########.fr       */
+/*   Updated: 2023/04/28 21:28:03 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
+#include "libft.h"
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char *d;
 	const char *s;
-	int	i;
+	size_t	i;
 
 	d = (unsigned char *)dest;
 	s = (const char *)src;

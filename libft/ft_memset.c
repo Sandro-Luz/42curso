@@ -6,15 +6,15 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 19:56:05 by marvin            #+#    #+#             */
-/*   Updated: 2023/04/19 19:56:07 by marvin           ###   ########.fr       */
+/*   Updated: 2023/04/28 21:30:13 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stddef.h>
+#include "libft.h"
 void	*ft_memset(void *str, int c, size_t n)
 {
 	unsigned char	conversion;
-	int	ite;
+	size_t	ite;
 	unsigned char	*s;
 
 	conversion = c + '0';

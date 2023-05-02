@@ -6,19 +6,20 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 19:55:57 by marvin            #+#    #+#             */
-/*   Updated: 2023/04/19 19:55:59 by marvin           ###   ########.fr       */
+/*   Updated: 2023/04/28 21:29:39 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
+#include "libft.h"
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	int	i;
+	size_t	i;
 	unsigned char	*dest1;
 	const unsigned char	*src1;
 
+	i = 0;
 	dest1 = (unsigned char*)dest;
-	src1 = (const unsigned char*)src1;
+	src1 = (const unsigned char*)src;
 	while(*src1 != '\0' && i <= n)
 	{
 		*dest1 = *src1;
@@ -28,7 +29,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return dest1;
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int main()
@@ -44,4 +45,4 @@ int main()
 			             printf("str2: %s\n", str2);
 			
 			                 return 0;
-			                 }
+			                 }*/

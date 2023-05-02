@@ -6,15 +6,15 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 19:54:25 by marvin            #+#    #+#             */
-/*   Updated: 2023/04/19 19:54:50 by marvin           ###   ########.fr       */
+/*   Updated: 2023/04/28 21:21:13 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<strings.h>
+#include "libft.h"
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char *str;
-	int	i;
+	size_t	i;
 
 	str = (unsigned char *)s;
 	i = 0;

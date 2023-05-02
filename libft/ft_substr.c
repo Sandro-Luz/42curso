@@ -1,11 +1,10 @@
-#include<stdlib.h>
-#include<string.h>
+#include"libft.h"
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
-    unsigned char *p;
+    char *p;
 
     p = malloc(len + 1);
-    if(start > ft_strlen(len))
+    if(start > len)
         return (NULL);
     ft_strlcpy(p, s + start, len);
     p[len] = '\0';

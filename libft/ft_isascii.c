@@ -6,18 +6,18 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 19:55:03 by marvin            #+#    #+#             */
-/*   Updated: 2023/04/19 19:55:04 by marvin           ###   ########.fr       */
+/*   Updated: 2023/04/28 21:23:44 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
+#include "libft.h"
 int	ft_isascii(int c)
 {
 	unsigned char	i;
 
 	i = c + '0';
 
-	if( i >= 0 && i <= 127)
+	if( i > 0 && i <= 127)
 		return (1);
 	return (0);
 }

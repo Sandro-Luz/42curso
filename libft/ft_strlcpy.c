@@ -6,15 +6,15 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 19:56:14 by marvin            #+#    #+#             */
-/*   Updated: 2023/04/19 19:56:28 by marvin           ###   ########.fr       */
+/*   Updated: 2023/05/02 14:00:20 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
+#include"libft.h"
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	int	i;
-	int	len;
+	size_t	i;
+	size_t	len;
 
 	i = 0;
 	len = 0;

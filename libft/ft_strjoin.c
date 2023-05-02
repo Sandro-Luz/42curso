@@ -1,12 +1,12 @@
-#include<stdlib.h>
+#include"libft.h"
 char    *ft_strjoin(const char *str1, const char *str2)
 {
-    unsigned char   *totalstr;
+    char   *totalstr;
     int len1;
     int len2;
 
-    len1 = ft_strlen(str1);
-    len2 = ft_strlen(str2);
+    len1 = ft_strlen((char*)str1);
+    len2 = ft_strlen((char*)str2);
     totalstr = malloc(len1 + len2 + 1);
     if(totalstr)
     {
