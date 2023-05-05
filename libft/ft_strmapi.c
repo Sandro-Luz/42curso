@@ -12,7 +12,7 @@ char    *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (str);
 	while (i < l)
 	{
-		str[i] = (*f)(i, str[i]);
+		str[i] = (*f)(i, s[i]);
 		i++;
 	}
 	str[i] = 0;

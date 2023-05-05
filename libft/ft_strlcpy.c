@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 19:56:14 by marvin            #+#    #+#             */
-/*   Updated: 2023/05/02 14:00:20 by marvin           ###   ########.fr       */
+/*   Updated: 2023/05/05 10:14:39 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,25 +20,11 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	len = 0;
 	while(src[len] != '\0')
 		len++;
-	while(src[i] != '\0' && i < size - 1)
+	while(i < size - 1)
 	{
 		dest[i] = src[i];
 		i++;
 	}
 	dest[i] = '\0';
 	return len;
-}
-
-#include<stdio.h>
-int main(void)
-{
-    char src[] = "This is a test string.";
-    char dest[16];
-    size_t len;
-
-    len = ft_strlcpy(dest, src, sizeof(dest));
-    printf("Destination string: %s\n", dest);
-    printf("Length of source string: %zu\n", len);
-
-    return 0;
 }
